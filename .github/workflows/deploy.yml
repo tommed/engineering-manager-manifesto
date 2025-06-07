@@ -30,6 +30,7 @@ jobs:
 
       - run: make setup
       - run: make build
+      - run: ls -lR ./_site
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
