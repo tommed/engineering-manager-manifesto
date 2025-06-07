@@ -1,0 +1,7 @@
+title: Engineering Manager Manifesto
+email: your-email@example.com
+description: >-
+  The opinionated guide for Engineering Managers, covering GitHub, trunk-based development, GitHub Actions, Cursor and more.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://tommed.github.io/engineering-manager-manifesto" # the base hostname & protocol for your site
+theme: minima 
