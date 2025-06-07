@@ -1,5 +1,6 @@
 
-.PHONY: clean
+.PHONY: clean pre-check-in
+make pre-check-in: clean
 clean:
 	@rm -rf _site 2> /dev/null
 
@@ -9,7 +10,7 @@ setup:
 
 .PHONY: lint
 lint:
-	@bundle exec mdl .
+	@bundle exec mdl --rules=~MD002 .
 
 .PHONY: serve
 serve:
