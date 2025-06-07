@@ -1,5 +1,10 @@
 const jsExtensions = [".js", ".jsx", ".ts", ".tsx", ".md", ".mdx"];
 
+// Import the recommended configs
+const eslintRecommended = require("eslint/conf/eslint-recommended");
+// If you want React rules, also import:
+// const reactRecommended = require("eslint-plugin-react/configs/recommended");
+
 /** @type {import('eslint').Linter.FlatConfig[]} */
 module.exports = [
   {
@@ -16,13 +21,15 @@ module.exports = [
         process: true,
       },
     },
-    plugins: {
-      //react: require("eslint-plugin-react"),
-    },
+    // plugins: {
+    //   react: require("eslint-plugin-react"),
+    // },
     rules: {},
   },
+  // Spread the recommended configs for JS/TS/MDX files
   {
     files: jsExtensions.map(ext => `**/*${ext}`),
-    extends: ["eslint:recommended"/*, "plugin:react/recommended"*/],
+    ...eslintRecommended,
+    // ...reactRecommended,
   },
 ]; 
