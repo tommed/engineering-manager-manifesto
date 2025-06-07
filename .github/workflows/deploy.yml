@@ -30,8 +30,9 @@ jobs:
           destination: ./_site
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v4
         with:
+          name: github-pages  # MUST be set
           path: ./_site
 
   deploy:
