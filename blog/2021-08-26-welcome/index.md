@@ -1,11 +1,21 @@
 ---
 slug: welcome
 title: Welcome
-authors: [slorber, yangshun]
-tags: [facebook, hello, docusaurus]
+authors: endi
+tag: [greeting, docusaurus]
 ---
 
-[Docusaurus blogging features](https://docusaurus.io/docs/blog) are powered by the [blog plugin](https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-blog).
+Welcome to this Docusaurus blog! This is a sample post to demonstrate line
+wrapping for markdownlint compliance. You can delete this file and create your own
+blog posts.
+
+Docusaurus is a project for building, deploying, and maintaining open source
+project websites easily. Docusaurus saves open source teams time and reduces
+maintenance by providing out-of-the-box documentation, blog, and custom pages.
+
+[Docusaurus blogging features](https://docusaurus.io/docs/blog)
+are powered by the
+[blog plugin](https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-blog).
 
 Here are a few tips you might find useful.
 
@@ -26,4 +36,5 @@ A blog post folder can be convenient to co-locate blog post images:
 
 The blog supports tags as well!
 
-**And if you don't want a blog**: just delete this directory, and use `blog: false` in your Docusaurus config.
+**And if you don't want a blog**: just delete this directory,
+and use `blog: false` in your Docusaurus config.
