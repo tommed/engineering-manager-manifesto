@@ -5,3 +5,4 @@ description: >-
 baseurl: "/engineering-manager-manifesto"
 url: "https://tommed.github.io/engineering-manager-manifesto"
 theme: minima
+header_pages: ["process.md", "people.md", "product.md"]

@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Trunk-based Development
+nav_exclude: true
 ---
 
 Trunk-based development is a software engineering practice where all developers
@@ -38,9 +39,16 @@ stability.
 
 ## Developer Workflow
 
-This is my ideal workflow for every developer. You'll also notice that _most_ of
-this is applied to this repo. Some aren't relevant as there's no actual code and
-only one contributor, but everything that can be set, is. I eat my own dog food!
+This is my ideal workflow for every developer.
+
+You'll also notice that _most_ of this is applied to this repo. Some aren't
+relevant as there's no actual code and only one contributor, but everything that
+can be set, is (including strict Markdown linting). I eat my own dog food!
+
+![Status Checks for this Repo]({{
+'/assets/images/this-repo-status-checks.png' | relative_url }})
+
+### Steps
 
 1. Design and Document your change request
 1. Create a semantically named branch, such as:

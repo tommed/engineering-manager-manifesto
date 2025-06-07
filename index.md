@@ -39,6 +39,6 @@ without a disclaimer.
 
 ## Core Responsibilities
 
+- [Process](process.md)
 - [People](people.md)
 - [Product](product.md)
-- [Process](process.md)
