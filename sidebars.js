@@ -19,7 +19,6 @@ const sidebars = {
     'people',
     'product',
     'process',
-    'intro',
   ],
 };
 
