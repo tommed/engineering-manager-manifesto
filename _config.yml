@@ -2,6 +2,6 @@ title: Engineering Manager Manifesto
 email: tom.medhurst@icloud.com
 description: >-
   The opinionated guide for Engineering Managers, covering GitHub, trunk-based development, GitHub Actions, Cursor and more.
-baseurl: ""
+baseurl: "/engineering-manager-manifesto"
 url: "https://tommed.github.io/engineering-manager-manifesto"
 theme: minima
