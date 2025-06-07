@@ -1,4 +1,4 @@
-name: Deploy Docusaurus to GitHub Pages
+name: Deploy Jekyll to GitHub Pages
 
 on:
   push:
@@ -6,24 +6,29 @@ on:
       - main
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+      - name: Build with Jekyll
+        uses: actions/jekyll-build-pages@v1
         with:
-          fetch-depth: 0
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+          source: .
+          destination: ./_site
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          node-version: 20
-      - name: Install dependencies
-        run: npm install
-      - name: Build website
-        run: npm run build
+          path: ./_site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build
-          publish_branch: gh-pages 
+        id: deployment
+        uses: actions/deploy-pages@v2 
