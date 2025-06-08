@@ -8,7 +8,9 @@ development, CI/CD, and best practices.
 
 ## Process Scope
 
-- [Trunk based development](process/trunk-based-development/)
-- [Cursor Rules](process/cursor-rules/)
+- [Trunk based development]({{
+  '/process/trunk-based-development/' | relative_url }})
+- [Cursor Rules]({{
+  '/process/cursor-rules/' | relative_url }})
 - Information Security and Governance
 - Dangerfile
