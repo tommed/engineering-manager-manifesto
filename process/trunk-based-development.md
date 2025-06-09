@@ -46,7 +46,12 @@ relevant as there's no actual code and only one contributor, but everything that
 can be set, is (including strict Markdown linting). I eat my own dog food!
 
 ![Status Checks for this Repo]({{
-'/assets/images/this-repo-status-checks.png' | relative_url }})
+  '/assets/images/this-repo-status-checks.png' | relative_url
+}})
+
+![On merge into main, build and deploy]({{
+  '/assets/images/this-repo-main-deploy.png' | relative_url
+}})
 
 ### Steps
 

@@ -1,6 +1,6 @@
 
 .PHONY: clean pre-check-in
-make pre-check-in: clean
+pre-check-in: lint build clean
 clean:
 	@rm -rf _site 2> /dev/null
 
