@@ -13,14 +13,14 @@ and more.
 
 Like many, as CTO of [Vigilant](https://vigilantapps.com)
 I have to wear many 'hats'. We're a small company and so I naturally
-take on the role of CTO (strategic) and Engineering Manager (Tactical).
+take on the role of CTO (strategic) and Engineering Manager (tactical).
 
 Both roles are incredibly deep and broad, so I wanted to help myself
 separate the two by defining the one I find more interesting (this one)
 in detail.
 
 The role of Engineering Manager can be split into three core
-responsibilities: people, product and process. It's from here we can
+responsibilities: **people, product and process**. It's from here we can
 discuss the methodologies I've learnt along the way which I hope will
 help others beginning their journey in this extremely challenging
 but rewarding career.

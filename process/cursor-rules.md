@@ -27,17 +27,17 @@ assistants can easily locate and reference your coding standards.
   ```text
   .cursor/
     rules/
-      go.md
-      vue.md
-      python.md
-      general.md
+      go.mdc
+      vue.mdc
+      python.mdc
+      general.mdc
   ```
 
 - **File Naming:**  
   Name each rule file according to the language or technology it covers, using
-  lowercase and hyphens if needed (e.g., `go.md`, `vue.md`, `python.md`,
-  `ci-cd.md`). For general or cross-language rules, use names like `general.md`
-  or `conventions.md`.
+  lowercase and hyphens if needed (e.g., `go.md`, `vue.mdc`, `python.mdc`,
+  `ci-cd.mdc`). For general or cross-language rules, use names like `general.mdc`
+  or `conventions.mdc`.
 
 - **Content Structure:**  
   Each rule file should include:
@@ -58,6 +58,12 @@ assistants can easily locate and reference your coding standards.
 By following this structure, you make it easy for both humans and AI tools to
 understand and apply your coding preferences, leading to more consistent and
 maintainable codebases.
+
+---
+
+## Jekyll Markdown
+
+See `.cursor/rules/markdown.mcd`.
 
 ---
 
@@ -142,7 +148,7 @@ my-spa/
         views/
         logic/
     stores/         # Pinia stores
-    components/     # Shared components
+    shared/         # Shared across all modules
     main.ts
 ```
 
